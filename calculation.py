@@ -18,14 +18,14 @@ def divide(x, y):
 # Displaying the 4 operations
 print("Select operation.\n1.Add(+)\n2.Subtract(-)\n3.Multiply(x)\n4.Divide(/)")
 
-# I created a while loop inorder to run the program for multiple times
+# I created a while loop in order to run the program for multiple times
 while True:
     choice = input("Choose your operator(1,2,3,4): ")
 
     if choice in ("1", "2", "3", "4"):
         # the try function let's me check for errors in this block of code
         # the except function let's me handle the error
-        # the ValueError will be raised if the user inputs a string in the num_1 or num_2
+        # the ValueError will be raised if the user inputs a non-int value in num_1 and num_2
         try:
             num_1 = int(input("Enter first number: "))
             num_2 = int(input("Enter second number: "))
